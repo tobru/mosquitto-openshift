@@ -25,7 +25,7 @@ objects:
       dockerStrategy:
         from:
           kind: ImageStreamTag
-          name: eclipse-mosquitto:1.4.8
+          name: eclipse-mosquitto:1.4.12
       type: Docker
     triggers:
     - github:
@@ -46,13 +46,13 @@ objects:
   spec:
     tags:
     - annotations:
-        openshift.io/imported-from: eclipse-mosquitto:1.4.8
+        openshift.io/imported-from: eclipse-mosquitto:1.4.12
       from:
         kind: DockerImage
-        name: eclipse-mosquitto:1.4.8
+        name: eclipse-mosquitto:1.4.12
       generation: 2
       importPolicy: {}
-      name: 1.4.8
+      name: 1.4.12
 - apiVersion: v1
   kind: ImageStream
   metadata:

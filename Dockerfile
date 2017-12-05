@@ -1,4 +1,4 @@
-FROM eclipse-mosquitto:1.4.8
+FROM eclipse-mosquitto:1.4.12
 MAINTAINER Tobias Brunner <tobias@tobru.ch>
 
 ADD fix-permissions.sh /usr/local/bin
