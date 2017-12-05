@@ -229,18 +229,18 @@ objects:
       # Listeners
       listener 1883
 
-      listener 8883
-      cafile /mosquitto/config/ca.crt
-      certfile /mosquitto/config/mosquitto.crt
-      keyfile /mosquitto/config/mosquitto.key
-      require_certificate false
+      #listener 8883
+      #cafile /mosquitto/config/ca.crt
+      #certfile /mosquitto/config/mosquitto.crt
+      #keyfile /mosquitto/config/mosquitto.key
+      #require_certificate false
 
       listener 9002
       protocol websockets
 
       # Security
-      password_file /mosquitto/config/mosquitto.passwd
-      acl_file /mosquitto/config/mosquitto.acl
+      #password_file /mosquitto/config/mosquitto.passwd
+      #acl_file /mosquitto/config/mosquitto.acl
     mosquitto.acl: |
       # This affects access control for clients with no username.
       topic read $SYS/#

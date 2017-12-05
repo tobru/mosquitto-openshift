@@ -26,6 +26,10 @@ To update the Mosquitto configuration just edit the ConfigMap using
 `oc edit configmap mosquitto` and redeploy the application with
 `oc deploy mosquitto --latest` (the is no trigger when updating a ConfigMap).
 
+The configuration delivered with this template doesn't contain any security
+configuration (no TLS connections, no authentication. It's strongly recommended
+to configure TLS and authentication.
+
 ## Volumes
 
 To have persistent data, a volume can be mounted to `/mosquitto/data`:
